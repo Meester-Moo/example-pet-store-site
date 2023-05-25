@@ -1,6 +1,27 @@
-/* add a class for text, images, etc to make them all uniform in color, font size, etc */
+/* add a class for text, images, etc to make them all uniform in color, font size, etc
 
 body {
     background-color: #bdbdbd;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: #bdbdbd;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    border: 5px dashed green;
+}
+
+/* TODO - learn how text size works, maybe em and rem?

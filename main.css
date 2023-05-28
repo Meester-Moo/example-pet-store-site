@@ -21,18 +21,48 @@ body {
         "header     header      header      header"
         "nav        nav         nav         nav"
         "breadcrumb breadcrumb  breadcrumb  breadcrumb"
-        "main       main        main        main"
+        "main       main        img         img"
         "footer     footer      footer      footer"
 }
 
+/*********** HEADER ***********/
+
 header {
-    grid-area: header;
     border: 2px dashed red;
+    grid-area: header;
 }
+
+.header {
+    display: inline;
+}
+
+.topLeftCornerLogo {
+    width: 150px;
+    display: inline;
+}
+
+.topRightCornerLogo {
+    width: 300px;
+    display: inline;
+}
+
+/*********** NAVIGATION ***********/
 
 .homePageNavBar {
     grid-area: nav;
     border: 2px dashed yellow;
+}
+
+.dropDownMenu {
+    display: inline;
+}
+
+.dropDownArrow {
+    width: 30px;
+}
+
+.homePageNavBar div {
+    display: inline;
 }
 
 .breadCrumbBar {
@@ -40,27 +70,46 @@ header {
     border: 2px dashed blue;
 }
 
+/*********** CONTENT ***********/
+
 .homeContent {
     grid-area: main;
     border: 2px dashed purple;
 }
+
+.textContent {
+    display: inline;
+}
+
+.img {
+    grid-area: img;
+    border: 2px dashed green
+}
+
+.home_page_image {
+    width: 800px;
+    display: inline;
+}
+
+/*********** FOOTER ***********/
 
 footer {
     grid-area: footer;
     border: 2px dashed orange;
 }
 
-.topLeftCornerLogo {
-    width: 150px;
-}
-
-.topRightCornerLogo {
-    width: 300px;
+footer p {
+    text-align: center;
 }
 
 .footerLogo {
     width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/*********** GENERAL ***********/
 
 h1 {
     font-size: 3rem;

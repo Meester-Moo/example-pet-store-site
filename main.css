@@ -1,3 +1,6 @@
+
+/*TODO: Figure out next media query and remove the floating image in place of */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +28,17 @@ body {
         "footer     footer      footer      footer"
 }
 
+/********************** GENERAL **********************/
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
 /*********** HEADER ***********/
 
 header {
@@ -44,25 +58,25 @@ header {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    font-size: 2.2rem;
 }
 
 .topLeftCornerLogo {
-    flex: none;
     width: 100px;
     height: auto;
-    flex-grow: 1.5;
-    flex-basis: auto;
+    flex-grow: 1;
+    flex-basis: 0px;
+    flex-shrink: 1;
     margin-left: 30px;
 }
 
 .topRightCornerLogo {
-    flex: none;
     width: 250px;
     height: auto;
-    flex-grow: 1.5;
-    flex-basis: auto;
+    flex-grow: 1;
+    flex-basis: 0px;
+    flex-shrink: 2;                 /*Only changed it here*/
     margin-right: 30px;
-
 }
 
 /*********** NAVIGATION ***********/
@@ -74,8 +88,16 @@ header {
     flex-wrap: nowrap;
 }
 
-.dropDownMenu {
+.dropDownMenuDesktop {
     display: inline;
+}
+
+.dropDownMenuMobile {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 .dropDownArrow {
@@ -98,11 +120,21 @@ header {
     border: 2px dashed purple;
 }
 
-.textContent {
+.textBox {
     display: inline;
 }
 
-.img {
+.homeText {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.indentHomeText {
+    margin-left: 30px;
+}
+
+.homeImageBox {
     grid-area: img;
     border: 2px dashed green
 }
@@ -115,6 +147,8 @@ header {
 /*********** FOOTER ***********/
 
 footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
     grid-area: footer;
     border: 2px dashed orange;
 }
@@ -129,19 +163,13 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
-
-/*********** GENERAL ***********/
-
-h1 {
-    font-size: 4rem;
-}
+/********************** MEDIA QUERIES **********************/
 
 @media only screen and (max-width: 768px) {
 
     /*********** HEADER ***********/
 
     header {
-        max-width: 768px;
         border: 2px dashed red;
         grid-area: header;
         display: flex;
@@ -153,9 +181,67 @@ h1 {
     
 
     .headerText {
-        flex: none;
-        flex-grow: 2;
-        flex-basis: auto;
+        flex: 1;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 25px;
+        margin-right: 50px;
+    }
+
+    .topLeftCornerLogo {
+        max-width: 100%;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        margin-left: 20px;
+    }
+
+    .topRightCornerLogo {
+        display: none;
+        
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        width: 250px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    /*********** NAVIGATION ***********/
+
+    
+
+    /*********** CONTENT ***********/
+
+    .home_page_image {
+        width: 300px;
+        float: right;
+    }
+    .img {
+        display: none;
+    }
+
+    /*********** FOOTER ***********/
+
+}
+
+@media only screen and (max-width: 650px) {
+    /*********** HEADER ***********/
+
+    header {
+        border: 2px dashed red;
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+
+    .headerText {
+        flex: 1;
         text-align: center;
         font-size: 2.2rem;
         margin-left: 25px;
@@ -165,20 +251,75 @@ h1 {
     .topLeftCornerLogo {
         max-width: 100%;
         height: auto;
-        flex: none;
         flex-grow: 1;
-        flex-basis: 150px;
+        flex-basis: 0px;
+        flex-shrink: 1;
         margin-left: 20px;
     }
 
     .topRightCornerLogo {
         display: none;
-        
-        flex: none;
         width: 250px;
         height: auto;
-        flex-grow: 1.5;
-        flex-basis: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        margin-right: 30px;
+    }
+
+    /*********** NAVIGATION ***********/
+
+    
+
+    /*********** CONTENT ***********/
+
+    .home_page_image {
+        display: none;
+    }
+
+    /*********** FOOTER ***********/
+}
+
+@media only screen and (max-width: 386px) {
+    /*********** HEADER ***********/
+
+    header {
+        border: 2px dashed red;
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+
+    .headerText {
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 2;
+        text-align: center;
+        font-size: 2.2rem;
+        margin-left: 25px;
+        margin-right: 50px;
+    }
+
+    .topLeftCornerLogo {
+        max-width: 100%;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        margin-left: 20px;
+    }
+
+    .topRightCornerLogo {
+        display: none;
+        width: 250px;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
         margin-right: 30px;
     }
 
@@ -190,19 +331,81 @@ h1 {
 
     .home_page_image {
         width: 50px;
+        display: inline;
     }
 
     /*********** FOOTER ***********/
-
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 1px) and (max-width: 385px) {
+    /*********** HEADER ***********/
 
+    header {
+        border: 2px dashed red;
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+
+    .headerText {
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 2;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 25px;
+        margin-right: 50px;
+    }
+
+    .topLeftCornerLogo {
+        max-width: 100%;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        margin-left: 20px;
+    }
+
+    .topRightCornerLogo {
+        display: none;
+        
+        width: 250px;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 0px;
+        flex-shrink: 1;
+        margin-right: 30px;
+    }
+
+    /*********** NAVIGATION ***********/
+
+    .dropDownMenuDesktop {
+        display: none;
+    }
+
+    .dropDownMenuMobile {
+        display: inline;
+    }
+    
+    .hamburger-icon {
+        display: inline;
+        width: 30px;
+    }
+
+    .navButtons {
+        display: none;
+    }
+
+    /*********** CONTENT ***********/
+
+    .home_page_image {
+        width: 50px;
+        display: none;
+    }
+
+    /*********** FOOTER ***********/
 }
-
-/* @media screen and (max-width: 480px) */
-
-p {
-    font-size: 1rem;
-}
-

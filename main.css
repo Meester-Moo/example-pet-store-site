@@ -1,5 +1,27 @@
+/*TODO: Make images look nice and review the PowerPoint, then start on next pages */
 
-/*TODO: Figure out next media query and remove the floating image in place of */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * {
     margin: 0;
@@ -24,7 +46,7 @@ body {
         "header     header      header      header"
         "nav        nav         nav         nav"
         "breadcrumb breadcrumb  breadcrumb  breadcrumb"
-        "main       main        img         img"
+        "main       main        main        main"
         "footer     footer      footer      footer"
 }
 
@@ -135,7 +157,7 @@ header {
 }
 
 .homeImageBox {
-    grid-area: img;
+    grid-area: main;
     border: 2px dashed green
 }
 
@@ -269,73 +291,31 @@ footer p {
 
     /*********** NAVIGATION ***********/
 
-    
-
-    /*********** CONTENT ***********/
-
-    .home_page_image {
+    .dropDownMenuDesktop {
         display: none;
     }
 
-    /*********** FOOTER ***********/
-}
-
-@media only screen and (max-width: 386px) {
-    /*********** HEADER ***********/
-
-    header {
-        border: 2px dashed red;
-        grid-area: header;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    
-
-    .headerText {
-        flex-grow: 1;
-        flex-basis: 0px;
-        flex-shrink: 2;
-        text-align: center;
-        font-size: 2.2rem;
-        margin-left: 25px;
-        margin-right: 50px;
-    }
-
-    .topLeftCornerLogo {
-        max-width: 100%;
-        height: auto;
-        flex-grow: 1;
-        flex-basis: 0px;
-        flex-shrink: 1;
-        margin-left: 20px;
-    }
-
-    .topRightCornerLogo {
-        display: none;
-        width: 250px;
-        height: auto;
-        flex-grow: 1;
-        flex-basis: 0px;
-        flex-shrink: 1;
-        margin-right: 30px;
-    }
-
-    /*********** NAVIGATION ***********/
-
-    
-
-    /*********** CONTENT ***********/
-
-    .home_page_image {
-        width: 50px;
+    .dropDownMenuMobile {
         display: inline;
     }
+    
+    .hamburger-icon {
+        display: inline;
+        width: 30px;
+    }
+
+    .navButtons {
+        display: none;
+    }
+
+    /*********** CONTENT ***********/
+
+    
 
     /*********** FOOTER ***********/
 }
+
+
 
 @media only screen and (min-width: 1px) and (max-width: 385px) {
     /*********** HEADER ***********/
@@ -405,6 +385,12 @@ footer p {
     .home_page_image {
         width: 50px;
         display: none;
+    }
+
+    .homeText {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
     }
 
     /*********** FOOTER ***********/

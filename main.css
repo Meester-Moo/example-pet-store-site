@@ -1,4 +1,7 @@
-/*TODO: Make images look nice and review the PowerPoint, then start on next pages */
+/*TODO: Make images look nice*/
+/*TODO: Make nav look nice*/
+
+/*review the PowerPoint, then start on next pages*/
 
 
 
@@ -310,6 +313,9 @@ footer p {
 
     /*********** CONTENT ***********/
 
+    .home_page_image {
+        display: none;
+    }
     
 
     /*********** FOOTER ***********/

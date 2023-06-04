@@ -1,29 +1,8 @@
-/*Fix horizontal bars on lowest media query*/
-/*TODO: Make images look nice*/
-/*TODO: Make nav look nice*/
+/*TODO: Make 1200+ media query with no circle logo
+/*TODO: Move breadcrumb bar to the far right
+/*TODO: review the requirements
 
 /*review the PowerPoint, then start on next pages*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,6 +118,13 @@ header {
     border: 2px dashed blue;
 }
 
+.navButtonsBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
 /*********** CONTENT ***********/
 
 .homeContent {
@@ -192,7 +178,7 @@ footer p {
 }
 /********************** MEDIA QUERIES **********************/
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
 
     header {
         border: 2px dashed red;
@@ -233,7 +219,9 @@ footer p {
 
     /*********** NAVIGATION ***********/
 
-    
+    .navButton {
+        font-size: 2rem;
+    }
 
     /*********** CONTENT ***********/
 
@@ -292,7 +280,9 @@ footer p {
 
     /*********** NAVIGATION ***********/
 
-    
+    .navButton {
+        font-size: 1.5rem;;
+    }
 
     /*********** CONTENT ***********/
 
@@ -358,6 +348,11 @@ footer p {
     /*********** NAVIGATION ***********/
 
     
+    
+    .navButton {
+        font-size: 1.25rem;
+        flex-grow: 1;
+    }
 
     /*********** CONTENT ***********/
 
@@ -433,7 +428,7 @@ footer p {
         width: 30px;
     }
 
-    .navButtons {
+    .navButtonsBar {
         display: none;
     }
 
@@ -506,7 +501,7 @@ footer p {
         width: 30px;
     }
 
-    .navButtons {
+    .navButtonsBar {
         display: none;
     }
 
@@ -543,8 +538,8 @@ footer p {
         flex-shrink: 2;
         text-align: center;
         font-size: 1.5rem;
-        margin-left: 25px;
-        margin-right: 50px;
+        margin-left: 15px;
+        margin-right: 35px;
     }
 
     .topLeftCornerLogo {
@@ -582,7 +577,7 @@ footer p {
         width: 30px;
     }
 
-    .navButtons {
+    .navButtonsBar {
         display: none;
     }
 
@@ -597,7 +592,7 @@ footer p {
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 5px;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     /*********** FOOTER ***********/

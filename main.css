@@ -4,11 +4,22 @@ Add some space between virtual consultation and the right side of the screen
 
 After adding Dog, Cat, and Fish pages, check Company Overview and Brand
 requirements
-    -Slogan: Evidence-based pet care advice for every pet lover
     -Brand Values: Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support
-    -Services: virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
+
     -add an about PPP at the bottom of each page?
+
     -everything must be one of the four colors?
+
+    -replace all bold, italic etc with semantic things like emphasized, etc
+
+
+
+
+    User information fields:
+    Name, phone number, email address, and time zone
+
+    Pet information fields:
+    Pet name, type, and age.
 */
 
 
@@ -170,6 +181,10 @@ header {
 
 .spacedText {
     margin-top: 15px;
+}
+
+.centered {
+    text-align: center;
 }
 /*********** FOOTER ***********/
 

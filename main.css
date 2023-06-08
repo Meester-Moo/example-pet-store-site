@@ -10,7 +10,7 @@ requirements
 
     -everything must be one of the four colors?
 
-    -replace all bold, italic etc with semantic things like emphasized, etc
+    -replace all bold, italic etc with semantic things like emphasized, etc, fill in all alts
 
 
 
@@ -48,7 +48,7 @@ body {
         "nav        nav         nav         nav"
         "breadcrumb breadcrumb  breadcrumb  breadcrumb"
         "main       main        main        main"
-        "footer     footer      footer      footer"
+        "footer     footer      footer      footer";
 }
 
 /********************** GENERAL **********************/
@@ -85,7 +85,7 @@ header {
 }
 
 .topLeftCornerLogo {
-    width: 100px;
+    width: 150px;
     height: auto;
     flex-grow: 1;
     flex-basis: 0px;
@@ -185,6 +185,14 @@ header {
 
 .centered {
     text-align: center;
+}
+
+.signup_bottom_image {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 /*********** FOOTER ***********/
 
@@ -577,7 +585,11 @@ footer p {
     }
     
     .homeText {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .signup_bottom_image {
+        width: 40%;
     }
 
     /*********** FOOTER ***********/
@@ -606,7 +618,8 @@ footer p {
     }
 
     .topLeftCornerLogo {
-        max-width: 100%;
+        width: 50px;
+        max-width: 250%;
         height: auto;
         flex-grow: 1;
         flex-basis: 0px;
@@ -654,7 +667,11 @@ footer p {
     }
     
     .homeText {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .signup_bottom_image {
+        width: 60%;
     }
 
     /*********** FOOTER ***********/
@@ -742,6 +759,11 @@ footer p {
         margin-right: 10px;
         margin-top: 5px;
         font-size: 0.75rem;
+    }
+
+    .signup_bottom_image {
+        width: 80%;
+        margin-top: 15px;
     }
 
     /*********** FOOTER ***********/

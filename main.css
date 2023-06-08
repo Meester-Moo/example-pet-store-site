@@ -1,6 +1,8 @@
 /* Goal for today: completely finish Home Page
 /* Goal for Wednesday: completely finish Dog, Cat and Fish Pages
 /* Goal for Thursday: completely finish Sign-Up Form Page
+
+Make all links, even resources on home page and navbars functional
 */
 
 
@@ -117,9 +119,6 @@ header {
     border: 2px dashed blue;
     display: flex;
     justify-content: center
-}
-
-.breadCrumbHome {
 }
 
 .navButtonsBar {

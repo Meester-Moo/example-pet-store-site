@@ -12,8 +12,7 @@ requirements
 
     -replace all bold, italic etc with semantic things like emphasized, etc, fill in all alts
 
-
-
+    -make top logo clickable to home
 
     User information fields:
     Name, phone number, email address, and time zone
@@ -62,6 +61,14 @@ h1 {
     font-size: 4rem;
 }
 
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #003B6D;
+    font-weight: bold;
+}
 
 /*********** HEADER ***********/
 
@@ -130,7 +137,8 @@ header {
     width: 30px;
 }
 
-.homePageNavBar div {
+.homePageNavBar {
+    background-color: #6699CC;
     display: inline;
 }
 
@@ -138,13 +146,22 @@ header {
     grid-area: breadcrumb;
     /*border: 2px dashed blue;*/
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.breadCrumbHome {
+    padding: 3px;
 }
 
 .navButtonsBar {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #6699CC;
+}
+
+.signupNavButton {
     margin-right: 1rem;
 }
 
@@ -203,7 +220,6 @@ footer {
     color: #BDBDBD;
     background-color: #003B6D;
     margin-top: 15px;
-    margin-bottom: 15px;
     grid-area: footer;
     /*border: 2px dashed orange;*/
 }
@@ -218,6 +234,10 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+}
+
+.footerText {
+    margin-bottom: 10px;
 }
 /********************** MEDIA QUERIES **********************/
 
@@ -292,6 +312,10 @@ footer p {
     }
 
     /*********** FOOTER ***********/
+
+    .footerText {
+    font-size: 1.2rem;
+}
 
 }
 

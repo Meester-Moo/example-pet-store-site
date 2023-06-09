@@ -69,6 +69,7 @@
         <nav class="breadCrumbBar">
             <div class="breadCrumbHome">Current Page: <a href="home.html">Home</a> - <strong> <a href="cats.html">Virtual Consultations</strong> </a> </div>
         </nav>
+
         <!--CONTENT-->
         <main class="homeContent">
             <section class="textBox">
@@ -84,34 +85,34 @@
 
                     <form>
                         <!--USER INFORMATION-->
-                        <div>
-                            <label for="firstName">First name</label>
+                        <div class="formfield">
+                            <label for="firstName">First Name:</label>
                             <input type="text" name="name" id="firstName" placeholder="First name" required>
                         </div>
 
-                        <div>
-                            <label for="phoneNumber">Phone Number</label>
+                        <div class="formfield">
+                            <label for="phoneNumber">Phone Number:</label>
                             <input type="number" name="phoneNumber" id="phoneNumber" required>
                         </div>
 
-                        <div>
-                            <label for="email">Email</label>
+                        <div class="formfield">
+                            <label for="email">Email:</label>
                             <input type="email" name="email" id="email" placeholder="Email" required>
                         </div>
 
-                        <div>
-                            <label for="timezone">Time Zone</label>
+                        <div class="formfield">
+                            <label for="timezone">Time Zone:</label>
                             <input type="text" name="timezone" id="timezone">
                         </div>
 
                         <!--PET INFORMATION-->
-                        <div>
-                            <label for="petName">Pet Name</label>
+                        <div class="formfield">
+                            <label for="petName">Pet Name:</label>
                             <input type="text" name="petName" id="petName" placeholder="Optional">
                         </div>
 
-                        <div>
-                            <label for="petType">Pet Type</label>
+                        <div class="formfield">
+                            <label for="petType">Pet Type:</label>
                             <select name="petType" id="petType">
                                 <option label="Dog" value="Dog"></option>
                                 <option label="Cat" value="Cat"></option>
@@ -120,13 +121,13 @@
                             </select>
                         </div>
 
-                        <div>
-                            <label for="petTypeOther">Pet Type not listed</label>
+                        <div class="formfield">
+                            <label for="petTypeOther">Pet Type not listed:</label>
                             <input type="text" name="petTypeOther" id="petTypeOther" placeholder="Optional" required>
                         </div>
 
-                        <div>
-                            <label for="petAge">Pet Age</label>
+                        <div class="formfield">
+                            <label for="petAge">Pet Age:</label>
                             <input type="text" name="petAge" id="petAge">
                         </div>
 
@@ -138,6 +139,7 @@
                 <img src="dogs3.jpg" class="signup_bottom_image" alt="">
             </section>
         </main>
+
         <!--FOOTER-->
         <footer>
             <img class="footerLogo" src="rectangle_logo.png" alt="Small rectangular logo">
